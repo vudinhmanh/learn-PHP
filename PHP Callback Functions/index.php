@@ -11,10 +11,34 @@ $lengths = array_map("my_callback", $strings);// gọi lại fun my_callback đ�
 print_r($lengths);
 
 // sử dụng anonymous function như 1 callback function
-function hello($callback) {
-  $callback;
+function my_test($callback) {
+  // Gọi hàm callback
+  $callback();
 }
-hello(function (){
-  echo "hello";
+// Truyền hàm ẩn danh như một callback function
+my_test(function() {
+  echo "Hello World!";
 });
+// hàm array_map áp dụng hàm callback cho mỗi phần tử để tính bình phương
+function square($item) {
+  return $item * $item;
+}
+$num = [1, 2, 3 , 4, 5, 6, 7, 8];
+$square_num = array_map('square', $num);
+echo "<br>";
+print_r($square_num);
+echo "<br>";
+// hàm array_filter áp dụng hàm callback để lọc phần tử
+// cách 1
+function checkOddNum($item) {
+  return $item % 2 ? true : false;
+}
+$oddNum1 = array_filter($num, 'checkOddNum');
+print_r($oddNum1);
+echo "<br>";
+// cách 2: sử dụng anonymous function
+$oddNum2 = array_filter($num, function($item){
+  return $item % 2 ? true : false;
+});
+print_r($oddNum2);
 ?>
