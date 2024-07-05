@@ -1,0 +1,18 @@
+Các kiến thức cần tự tìm hiểu ở phần php cơ bản:
+- Encode và decode json, trả về json cho trình duyệt.
+
+- XML, encode và decode xml, trả về xml cho trình duyệt. Tìm hiểu php DOMDocument parser để thao tác với xml, html.
+
+- Xử lý thời gian, tìm hiểu đối tượng Date trong php, hiểu ý nghĩa các ký tự trong date
+format string như: Y, y, h, i, s, d, m, M
+
+- Thay đổi timezone. Tìm hiểu cách sử dụng và các hàm phổ biến của thư viện Carbon
+để xử lý thời gian.
+
+- Đọc, sửa, tạo, xoá file, thư mục trong php, tìm hiểu các mode: r, r+, w, w+
+- Tìm hiểu phân quyền file trong linux, chmod, chown, ý nghĩa con số khi chmod, chmod 655, 777 là gì? Thử lại thao tác đọc, sửa, tạo, xoá file ở trên với các phân quyền khác nhau. Vì sao khi webserver muốn thao tác với file thì phải phân quyền cho user: www- data
+
+- interator trong php là gì? Vì sao array là một interator?
+- generator function: yield, yield_from
+- php serialize (chuyển array, object thành string), unserialize (string thành object, array) php http client, tạo - request đến server khác bằng php. Tìm hiểu curl và một thư viện như Guzzle
+- php error handling
