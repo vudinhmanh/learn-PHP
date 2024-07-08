@@ -1,6 +1,6 @@
 <!-- 
 - readfile(): hàm để đọc file
-- fopen($file, $Modes): hàm để dọc file và cung cấp nhiều tuỳ chọn hơn dựa vào tham số $model
+- fopen($file, $Modes): hàm để dọc file và cung cấp nhiều tuỳ chọn hơn dựa vào tham số $modes
   Các Modes để đọc file
 + r: mở file chỉ đọc
 + w: mở file để ghi. Xoá nội dung của tệp hoặc tạo tệp mới nếu nó không tồn tại

@@ -43,7 +43,7 @@ PHP Filters dùng để xác thực và lọc dữ liệu bên ngoài
   $url = "http://www.example.com/?name=John&age=25";
   $sanitized_url = filter_var($url, FILTER_SANITIZE_URL);
   echo $sanitized_url ."<br>";
-  //sử dụng filter_var để sanitze và lấy ra số nguyên
+  //sử dụng filter_var để sanitize và lấy ra số nguyên
   $string = "123123manh";
   $number = filter_var($string, FILTER_SANITIZE_NUMBER_INT);
   echo $number;

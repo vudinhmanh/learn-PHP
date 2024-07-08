@@ -22,6 +22,6 @@ class Dog extends Animal {
     echo "Gau gau";
   }
 }
-$cat = new Cat("Simmy");
+
 $dog = new Dog("Simmy");
 ?>
