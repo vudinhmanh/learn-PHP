@@ -1,0 +1,17 @@
+/* CSS project */
+.form-container {
+  margin: 50px auto;
+}
+.mg-form {
+  margin-bottom: 20px;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center ;
+}
+.btn-register {
+  width: 100%;
+}
+.errorInput {
+  font-style: italic;
+}
